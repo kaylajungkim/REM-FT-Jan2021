@@ -6,6 +6,7 @@ body{margin:0;
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto Slab', serif;
+    margin-block:0.2rem
 }
 
 h1{color:whitesmoke;
@@ -28,35 +29,48 @@ h4{
 
 h5{ font-size: 1.414rem;}
 
+h6{
+
+}
+
+p{
+    line-height: 1.6em;
+    margin-block: 0.6em;
+}
 header {
     background-color:darkgray;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px
 }
 
-/* div{ border: solid 1px yellow; width:100px;} */
-
-.card {
-    background-color: lavender;
+div{ 
+    /* border: solid 1px yellow; width:100px;} */
 }
+
 
 button {
     background-color: navy;
     color: white;
     border-radius: 50px;
-    font-size: large;
 }
 
 .btn-large {
     width: 300px;
     height: 80px;
-    front-size: 21px;
+    font-size: 21px;
 }
 
 .card {
     background-color: lavender;
-    border: 2px solid red;
-    width: 500px;
+    padding: 20px;
+    border: 2px solid #ff0000;
+    width: 250px;
     margin: 10px 30px 10px 30px;
-    text-align: center;
+}
+
+#card {
+    justify-content: space-evenly;
 }
 
 img{
@@ -67,20 +81,32 @@ img{
 }
 
 #hero {
-    height: 50vh;
+    height: 80vh;
     /* background-color: tomato; */
     text-align: center;
     background-image: url('../img/waves.jpg');
     background-size: cover;
     /* background-position: center; */
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
 }
 
 #about{
     height: 50vh;
 }
+
 #contact{
-    height: 50vh;
-}
+    height: 600vh;
+    background-color: coral;
+    /* boarder:5px solid black;
+    margin=10-px */
+    padding: 50px 100px}
+
+
 footer{
     height: 50vh;
+}
+.container {
+  display: flex; /* or inline-flex */
 }

@@ -12,10 +12,11 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bff7ea3e36.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!-- start - header -->
-    <header>
+    <header class="container">
         <div>
             <img src="https://www.ironhack.com/assets/icons/ironhack_logos/logo.svg" class="logo-header">
         </div>
@@ -27,44 +28,38 @@
             </nav>
         </div> 
         <div>
-            <a href="#">Login</a>
-            <a href="#">Icon</a>
+            <a href="#"><i class="far fa-user-circle fa-2x"></i></a>
+            <a href="#"><i class="fas fa-search fa-2x"></i></a>
         </div>
     </header>
 <!-- end - header -->
 
 <!-- start - hero -->
-    <section id="hero">
-        <h1>
-            Welcome to my page
-        </h1>
+    <section class="container" id="hero">
+        <h1> Welcome to my page</h1>
         <h4> 
-            <div>
-                Happy to see you here
-            </div>
+            <div> Happy to see you here </div>
             <div> Let's be happy</div>
         </h4>
         <button class="btn-large">this is a button</button>
     </section>
 <!-- end - hero -->
 
+
+<!-- start - cards -->
+<section id="card" class="container">
+
 <!-- start - cards 1 -->
-<section>
     <div class="card">
         <img src="img/a child b&w.jpg" alt="This is a child in black and white" >
         <h3> Card Title</h3>
-        <p> Description </p>
-        <button>
-            avatar
-        </button>
-        <button> author
-
-        </button>
+        <p> Description <em>sidudif</em></p> <p>second part</p>
+            avatar author
+            <button>click me</button>
     </div>
     <!-- end - cards 1 -->
 
     <!-- start - cards 2 -->
-<section>
     <div class="card">
         <img src="img/cave.jpg" alt="This is a cave">
         <h3> Card Title</h3>
@@ -75,7 +70,6 @@
     <!-- end - cards 2 -->
  
     <!-- start - cards 3 -->
-<section>
     <div class="card">
         <img src="img/person with grass.jpg" alt="">
         <h3> Card Title</h3>
@@ -85,7 +79,9 @@
     </div>
     <!-- end - cards 3 -->
 </section>
+
 <!-- end - cards -->
+
 
 <!-- start - about -->
 <section id="about">
@@ -95,14 +91,54 @@
 
 <!-- Start - contact -->
 <Section id="contact">
-    Contact
+    <h3> Let's connect </h3>
+    <label for="name"> Name:</label>
+    <input type="text" id="name">
+
+    <br><br>
+    
+    <label for="email"> Email:</label>
+    <input type="email" id="email">
+
+    <br><br>
+
+    <Label for="terms">I accept terms and conditions </Label>>
+    <input type="checkbox" id="terms">
+
+    <br><br>
+
+    <label for="date">Starting date> </label>
+    <input type="date" id="date">
+
+    <br><br>
+
+    <label for="document">Add your ID</label>
+    <input type="file" id="document">
+
+    <br><br>
+
+    <label for="senha">Creat a password</label>
+    <input type="password" id="senha">
+
+    <br><br>
+ 
+    <label for="mobile"> Your phone number</label>
+    <input type="tel" id="mobile">
+
+    <br><br>
+
+    <input type="submit" value="send all this info"></input>
+
 </Section>
 <!-- end - contact -->
 
 <!-- start - footer -->
 <footer>
-    Here is the footer. by the end. Check it out
-</footer>
+    <p>Follow me!</p>
+    <i class="fab fa-behance fa-2x"></i>
+    <i class="fab fa-instagram fa-2x"></i>
+    <i class="fab fa-medium fa-2x"></i>
+    </footer>
 <!-- end - footer -->
 
 
