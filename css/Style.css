@@ -1,7 +1,8 @@
 *{font-family: 'Poppins', sans-serif;
 }
 
-body{margin:0;
+body{margin:0 auto;
+    max-width: 1280px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -9,8 +10,9 @@ h1, h2, h3, h4, h5, h6 {
     margin-block:0.2rem
 }
 
-h1{color:whitesmoke;
-    font-size: 5.653rem;
+h1{color:grey;
+    /* font-size: 5.653rem; */
+    font-size: 3rem;
 }
 
 h2{
@@ -23,11 +25,13 @@ h3{
 }
 
 h4{
-    color:lightblue;
+    color:indianred;
     font-size: 1.999rem;
 }
 
-h5{ font-size: 1.414rem;}
+h5{ font-size: 1.414rem;
+    color:cornsilk;
+}
 
 h6{
 
@@ -38,10 +42,10 @@ p{
     margin-block: 0.6em;
 }
 header {
-    background-color:darkgray;
+    background-color:white;
     justify-content: space-between;
     align-items: center;
-    padding:20px
+    padding:20p;
 }
 
 div{ 
@@ -56,9 +60,13 @@ button {
 }
 
 .btn-large {
-    width: 300px;
-    height: 80px;
-    font-size: 21px;
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    color:ivory;
+    background-color:tomato;
+    border-color:grey;
+    border-radius: 50px;
 }
 
 .card {
@@ -75,16 +83,20 @@ button {
 
 img{
     width: 100%;
+    max-width: 1280px;
 }
 .logo-header{
-    width: 100px
+    width: 500px;
+    height: 100px;
+    justify-content: center;
+    color: darkgray;
 }
 
 #hero {
     height: 80vh;
     /* background-color: tomato; */
     text-align: center;
-    background-image: url('../img/waves.jpg');
+    background-image: url('../img/jessica-felicio-QS9ZX5UnS14-unsplash.jpg');
     background-size: cover;
     /* background-position: center; */
     flex-direction: column;
@@ -97,7 +109,7 @@ img{
 }
 
 #contact{
-    height: 600vh;
+    height: 50vh;
     background-color: coral;
     /* boarder:5px solid black;
     margin=10-px */
@@ -109,4 +121,66 @@ footer{
 }
 .container {
   display: flex; /* or inline-flex */
+}
+
+/* Linkes */
+a:link, a:visited{
+    background-color: darkblue;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover {
+    background-color: darkcyan;
+}
+a:visited{}
+
+a.active {
+    background-color: darkorange
+}
+
+/* menu links */
+a.menu:link, a.menu:visited{
+    background: none;
+    color: grey;
+}
+
+a.menu:hover {
+    color:peru;
+}
+
+/* section div h3 {
+    border: 2px dashed blue;
+} */
+
+/* links icons */
+
+a.icon:link {
+    background: none;
+}
+
+a.icon:hover {
+    background-color: darkviolet;
+    color: ghostwhite;
+    border-radius: 25%;
+}
+
+img{
+    filter: contrast(100%);
+    filter: grayscale(50%);
+    filter:saturate(200%);
+}
+
+/*  */
+/*  */
+/* Tablet */
+@media only screen and (min-width: 600px) and (max-width: 767px){
+}
+
+
+/*  */
+/*  */
+/* desktop */
+@media only screen and (mind-width:768px) {
+    font-size: 5.653rem;
 }
