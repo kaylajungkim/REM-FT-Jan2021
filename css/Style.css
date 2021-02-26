@@ -1,7 +1,7 @@
 *{font-family: 'Poppins', sans-serif;
 }
 
-body{margin:0 auto;
+body{margin: 0px; auto;
     max-width: 1280px;
 }
 
@@ -15,12 +15,13 @@ h1{color:grey;
     font-size: 3rem;
 }
 
+
 h2{
     font-size:3.998rem;
 }
 
 h3{
-    color:blue;
+    color:hotpink;
     font-size: 2.827rem;
 }
 
@@ -33,19 +34,23 @@ h5{ font-size: 1.414rem;
     color:cornsilk;
 }
 
-h6{
+h6{ color: black;
+    font-size: 3rem;
 
 }
 
 p{
     line-height: 1.6em;
     margin-block: 0.6em;
+    font-family: 'Poppins', sans-serif;
 }
 header {
     background-color:white;
     justify-content: space-between;
     align-items: center;
     padding:20p;
+    height:auto;
+    width: 1280px;
 }
 
 div{ 
@@ -54,9 +59,16 @@ div{
 
 
 button {
-    background-color: navy;
+    background-color: hotpink;
     color: white;
     border-radius: 50px;
+}
+
+.logo-header{
+    width: 200px;
+    height: ;
+    justify-content: center;
+    color: darkgray;
 }
 
 .btn-large {
@@ -65,43 +77,54 @@ button {
     font-size: 18px;
     color:ivory;
     background-color:tomato;
-    border-color:grey;
     border-radius: 50px;
+    align-items: center;
+    
 }
 
 .card {
     background-color: lavender;
-    padding: 20px;
-    border: 2px solid #ff0000;
-    width: 250px;
-    margin: 10px 30px 10px 30px;
+    padding: 10px;
+    border: 2px;
+    width: 100%;
+    margin: 100px 30px 10px 30px;
+    align-items: center;
+    text-align: center;
+}
+
+.card1 {
+    width: 100vh;
+    background-color: lavender;
+    padding: 10px;
+    border: 2px;
+    width: 500px;
+    height: 100%;
+    margin: 100px 30px 10px 30px;
+    align-items: center;
+    text-align: center;
 }
 
 #card {
     justify-content: space-evenly;
+    height: auto;
 }
+
+
 
 img{
     width: 100%;
-    max-width: 1280px;
-}
-.logo-header{
-    width: 500px;
-    height: 100px;
-    justify-content: center;
-    color: darkgray;
 }
 
 #hero {
-    height: 80vh;
+    height: 100vh;
     /* background-color: tomato; */
-    text-align: center;
-    background-image: url('../img/jessica-felicio-QS9ZX5UnS14-unsplash.jpg');
-    background-size: cover;
+    background-color:#FE6788;
     /* background-position: center; */
     flex-direction: column;
-    justify-content:center;
-    align-items:center;
+    justify-content:space-between;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
 }
 
 #about{
@@ -109,18 +132,20 @@ img{
 }
 
 #contact{
-    height: 50vh;
-    background-color: coral;
+    height: 60vh;
+    background-color:lavender;
     /* boarder:5px solid black;
     margin=10-px */
-    padding: 50px 100px}
+    padding: 10px;
+}
+
 
 
 footer{
     height: 50vh;
 }
 .container {
-  display: flex; /* or inline-flex */
+  display:flex; /* or inline-flex */
 }
 
 /* Linkes */
@@ -166,10 +191,10 @@ a.icon:hover {
 }
 
 img{
-    filter: contrast(100%);
+    /* filter: contrast(100%);
     filter: grayscale(50%);
     filter:saturate(200%);
-}
+} */
 
 /*  */
 /*  */
